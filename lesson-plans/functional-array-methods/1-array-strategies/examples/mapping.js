@@ -14,27 +14,38 @@ console.log('-- begin --');
 const values = [NaN, 'tree', false, 42, null];
 
 // map using typeof
-const _1_types = [];
-for (const value of values) {
-  const type = typeof value;
-  _1_types.push(type);
-}
+let _1_types = [];
+// for (const value of values) {
+//   const type = typeof value;
+//   _1_types.push(type);
+// }
+
+_1_types = values.map((value) => typeof value);
+console.log(_1_types);
 
 // map using boolean coercion and + 'y'
-const _2_truthiness = [];
-for (const value of values) {
-  const castToBool = Boolean(value);
-  const truthiness = castToBool + 'y';
-  _2_truthiness.push(truthiness);
-}
+let _2_truthiness = [];
+// for (const value of values) {
+//   const castToBool = Boolean(value);
+//   const truthiness = castToBool + 'y';
+//   _2_truthiness.push(truthiness);
+// }
+
+_2_truthiness = values.map((value) => Boolean(value) + 'y');
+console.log(_2_truthiness);
+
 
 const _3_strings = ['infinity', '1.4', '1000', 'NaN'];
 
 // map according to if a string is NaNy
-const _3_areNaNy = [];
-for (const string of _3_strings) {
-  const isNaNy = isNaN(string);
-  _3_areNaNy.push(isNaNy);
-}
+let _3_areNaNy = [];
+// for (const string of _3_strings) {
+//   const isNaNy = isNaN(string);
+//   _3_areNaNy.push(isNaNy);
+// }
+
+_3_areNaNy = _3_strings.map((item) => isNaN(item));
+
+console.log(_3_areNaNy);
 
 console.log('-- end --');
