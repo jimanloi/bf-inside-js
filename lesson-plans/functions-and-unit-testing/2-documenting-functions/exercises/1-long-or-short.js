@@ -3,12 +3,14 @@
 console.log('-- begin --');
 
 /**
- * _
+ * To determine if a text length is long or short.
+ * If it is shorter than the cutoff, it is short. Otherwise, it is long.
  *
- * @_ {_} _ - _
- * @_ {_} _ - _
- * @_ {_} _
+ * @param {string} text - the text to examine
+ * @param {number} cutoff - the cutoff number
+ * @return {string} 'long' or 'short'
  */
+
 const longOrShort = (text, cutoff) => {
   if (text.length < cutoff) {
     return 'short';
@@ -30,7 +32,7 @@ const _3_actual = longOrShort('qwerty', 7);
 console.assert(_3_actual === _3_expect, 'Test 3');
 
 const _4_expect = 'long';
-const _4_actual = longOrShort('', -1);
+const _4_actual = longOrShort('qwerty', -1);
 console.assert(_4_actual === _4_expect, 'Test 4');
 
 console.log('-- end --');
