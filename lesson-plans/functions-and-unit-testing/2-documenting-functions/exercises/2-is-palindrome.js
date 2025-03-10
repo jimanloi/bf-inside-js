@@ -3,10 +3,10 @@
 console.log('-- begin --');
 
 /**
- * _
+ * Check if a word is palindrome (reads the same backwards as forwards)
  *
- * @_ {_} _ - _
- * @_ {_}  _
+ * @param {string} toCheck - the word to check
+ * @returns {boolean} true or false that the word is palindrome
  */
 const isPalindrome = (toCheck) => {
   let reversed = '';
