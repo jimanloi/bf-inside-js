@@ -9,7 +9,10 @@ const deepCompare = (actual, expect) => actual === expect || Object.is(actual, e
  * @param {number[]} [arr=[]] - __
  * @returns {number[]} __
  */
-const copyArray = () => {};
+const copyArray = (arr) => {
+  const arrCopy = [...arr];
+  return arrCopy
+};
 
 const _1_arg = [1, 2, 3];
 const _1_returned = copyArray(_1_arg);
@@ -31,3 +34,5 @@ console.assert(
   deepCompare(_2_arg, [10, 11, 12, 13]),
   '2.c: _2_arg was not modified',
 );
+
+console.log('--end--')
