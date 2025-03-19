@@ -3,9 +3,18 @@
 'use strict';
 
 /**
- *
+ *To reverse a string
+ *@param {string} (text='') - the text to reverse
+ *@return {string} reversed text
  */
-__;
+
+const reverser = (text = '') => {
+  let reversedText = '';
+  for (let i = text.length - 1; i >= 0; i--) {
+    reversedText += text[i];
+  }
+  return reversedText;
+};
 
 describe('reverser: reverses a string', () => {
   it('reverses one letter', () => {
