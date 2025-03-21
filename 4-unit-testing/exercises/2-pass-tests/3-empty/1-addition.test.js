@@ -9,7 +9,14 @@
  * @param {number} [y=_] - The right number.
  * @returns {number} The sum of x and y.
  */
-__;
+
+const add = (x=0, y=0) => {
+  if (typeof x === 'number' && typeof y === 'number') {
+    return x + y;
+  } else {
+    return Error
+  }
+};
 
 describe('add: adds two numbers', () => {
   describe('how addition works', () => {

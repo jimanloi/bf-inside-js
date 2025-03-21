@@ -5,8 +5,13 @@
 console.log('-- begin --');
 
 /**
- *
+ *Count the presence of a specific character in a word
+
+ *@param {string} (text='') - a word to check
+ *@param {string} (toCount='') - a single character
+ *return {number} (count)
  */
+
 const countCharacter = (text = '', toCount = '') => {
   if (toCount.length !== 1) {
     return -1;

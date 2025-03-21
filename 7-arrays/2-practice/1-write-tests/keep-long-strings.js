@@ -1,5 +1,5 @@
 /**
- *
+ * Keep string when it is longer than a given number
  */
 export const keepLongStrings = (strings = [], long = 5) => {
   const longStrings = [];

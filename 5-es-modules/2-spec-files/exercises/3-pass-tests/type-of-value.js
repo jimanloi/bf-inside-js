@@ -5,4 +5,7 @@
  * @param {any} value - any javascript value
  * @returns {string} the value's type
  */
-__;
+
+export const typeOfValue = (value) => {
+  return typeof value
+};

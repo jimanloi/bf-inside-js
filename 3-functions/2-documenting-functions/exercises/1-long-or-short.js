@@ -5,11 +5,11 @@
 console.log('-- begin --');
 
 /**
- * _
+ * Determine if a word is long or short
  *
- * @_ {_} [_=_] - _
- * @_ {_} [_=_] - _
- * @_ {_} _
+ * @param {string} [text=''] - the text to check
+ * @param {number} [cutoff=0] - if the text length is longer than this number, it is long. Otherwise, it is short.
+ * @return {boolean} true=short false=long
  */
 const longOrShort = (text = '', cutoff = 0) => {
   if (text.length < cutoff) {
