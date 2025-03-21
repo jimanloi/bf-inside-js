@@ -4,6 +4,6 @@
  *
  */
 export const reverseArray = (arr = []) => {
-  const backwards = arr.reverse();
+  const backwards = [...arr].reverse();
   return backwards;
 };
